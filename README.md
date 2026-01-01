@@ -44,6 +44,8 @@ As a common sense, start with baby steps, and then if there are real/tangible be
 <h3>What about the project</h3>
 As a user not a cloud service provider, the benefits are very marginal if any, switch to Rust from Python.
 <br/>
-In Python, it might be only several lines of codes, and within an hour, it will spin up a endpoint for inference from a trained model.  On the other hand, with help of the latest AI tool, it took me 20 hours to reach to the stage.  Compared with colud hosting, it still lacks capabiliteis for scaling, error logging and handling etc.  Though, it can get rid of cold start -- in terms of 10 to 20 seconds for the first request, or memory buffer crash issue -- will not happen for 99%+ of cases.
+In Python, it might be only several lines of codes, and within an hour, it will spin up a endpoint for inference from a trained model.  On the other hand, with help of the latest AI tool, it took me 20 hours to reach to the stage, which still lacks capabiliteis for scaling, error logging and handling etc.  Most challenges are from the crate version hell and c++ wrapper.  The very same thing as dll hell, there is something called crate version hell -- some crates pointing to the same dependencies but different versions.  For c++ wrapper -- ort crate, it needs a fully loaded Linux image with c++ compiler and other libraries such as openssl (cannot be a minimized Linux, I chooced Ubuntu instead), which makes the building process cumbersome, and the final image very big.  
+<br/>
+Though, it does get rid of cold start -- in terms of 10 to 20 seconds for the first request, or memory buffer crash issue -- not happening for 99%+ of cases.
 <br/>
 In summary, it is a good learn process for conduct some AI work (or micro-service framework) with Rust, but it can hardly make any commercial sense.
