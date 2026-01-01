@@ -11,15 +11,10 @@ use std::net::SocketAddr;
 use std::path::PathBuf;
 use std::sync::Arc;
 use tokio::signal;
+use crate::models::AppState;
 use crate::predictor::ModelManager;
 // --- Models ---
 // moved to models.rs
-
-// State Manager
-#[derive(Clone)]
-pub struct AppState {
-    pub model: Arc<ModelManager>,
-}
 
 // --- Main Server Setup ---
 #[tokio::main]
