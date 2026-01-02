@@ -11,11 +11,11 @@ To run the project, follow the steps below.
 <ol>
   <li>Make sure Docker Desktop is running</li>
   <li>Open the project in Rustrover</li>
-  <li>In terminal window inside Rustrover, type "docker compose up -d --build"</li>
+  <li>In terminal window inside Rustrover, type <code>docker compose up -d --build</code></li>
   <li>Verify the image is generated and running in Docker</li>
   <li>Open browser and make sure http://localhost:1024 is responding</li>
-  <li>To predict a single item, go to test folder, run command "curl -X POST http://localhost:1024/predict -H "Content-Type: application/json" --data @data.json"</li>
-  <li>To conduct a batch prediction, go to test folder, run command "Go to test folder, run command "curl -X POST http://localhost:1024/predict -H "Content-Type: application/json" --data @data.json"</li>
+  <li>To predict a single item, go to test folder, run command <code>curl -X POST http://localhost:1024/predict -H "Content-Type: application/json" --data @data.json</code></li>
+  <li>To conduct a batch prediction, go to test folder, run command <code>curl -X POST http://localhost:1024/predict -H "Content-Type: application/json" --data @data.json</code></li>
 </ol>
 <h2>Take Aways</h2>
 After playing Rust over the x-mas to new year vacation time, here are some high-level take aways (welcome to comment).
